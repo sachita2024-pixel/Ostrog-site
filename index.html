@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaselenie Ostrog</title>
+    <link rel="stylesheet" href="Style/normolize.css">
+    <link rel="stylesheet" href="Style/reset.css">
+     <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ 
+</head>
+<body>
+    <div class="hero-wrapper">
+    <header class="header">
+        <div class="header__container flex">
+            <a href="/" class="header__link-logo">
+                <img src="Img/logoHeader.png" alt="logo" class="header__logo">
+            </a>
+            <!-- Бургер (виден только на мобильных) -->
+        <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </button>
+
+        <!-- Навигация (на мобильных — выпадающая панель) -->
+        <nav class="navigation" id="mobileMenu">
+
+            <!-- Крестик (виден только на мобильных) -->
+            <button class="navigation__close" id="closeMenu" aria-label="Закрыть меню">
+                ✕
+            </button>
+            <div class="header__menu">
+                <ul class="list-reset header__menu-list flex">
+                    <li class="header__items-menu">
+                        <a href="#company" class="header__menu-link">
+                           О компании 
+                        </a>
+                    </li>
+                    <li class="header__items-menu">
+                        <a href="#objects" class="header__menu-link">
+                            Объекты
+                        </a>
+                    </li>
+                    <li class="header__items-menu">
+                        <a href="#privilege" class="header__menu-link">
+                            Преимущества
+                        </a>
+                    </li>
+                    <li class="header__items-menu">
+                        <a href="#contacts" class="header__menu-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+            <div class="header__btn flex">
+                <div class="button__email flex">
+                    <picture>
+                        <source media="(max-width: 1024px)" srcset="img/mail-icon.png">
+                        <img src="Img/mail.svg" alt="icon_maill">
+                    </picture>
+                    <a class="btn header__btn1" href="mailto:ukostrog.irk@gmail.com">ukostrog.irk@gmail.com</a>
+                </div>
+                <div class="button__phone flex">
+                    <picture>
+                        <source media="(max-width: 1024px)" srcset="img/phone-icon.png">
+                        <img src="Img/phone.svg" alt="icon_phone">
+                    </picture>
+                    <a class="btn header__btn1" href="tel:8 (3952) 666-428">8 (902)5-
+                        666-428</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Затемнение при открытом меню -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <main>
+        <section class="section__hero ">
+            <div class="container hero animate">
+                <div class="hero__descr">
+                    <h1 class="hero__title">
+                        “острог”<br>
+                        <span class="hero__span">управляющая компания</span>
+                    </h1>
+                    <p class="hero__under-title">
+                        Наш опыт с&nbsp;2014 года <br>
+                        &mdash;&nbsp;ваша уверенность в&nbsp;завтрашнем дне.
+                    </p>
+
+                    <div class="hero__btn flex">
+                        <a href="#documents" class="hero__btn-docs">документы новосёла</a>
+                        <button class="hero__btn-acident" id="openModal">аварийная служба</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </div>
+    <div class="acident__plashka" >
+                <div class="acident__plashka-descr">
+                    <button class="btn acident__plashka-close" id="plashkaClose">
+                        <img src="Img/close.svg" alt="close">
+                    </button>
+                    <h2 class="plashka__title">Аварийная служба</h2>
+                    <p class="plashka__descr_p">
+                        тел: 8 (902) 5-666-428
+                    </p>
+                </div>
+                </div>
+        <section class="section__download">
+            <div class="container download__qr-code">
+                <div class="download__qr-descr flex">
+                    <img src="Img/qr-mdo.png" alt="qr-cod" class="download__qr">
+                    <div class="qr-descr_block">
+                        <p class="qr__title">Приложение “Мой дом Онлайн”</p>
+                        <p class="qr__descr">Управляйте услугами ЖКХ <br>
+                             в&nbsp;новом личном кабинете</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__company" id="company">
+            <div class="container company">
+                <h2 class="company__title  animate"> О компании</h2>
+                <div class="company__descr-block  animate">
+                    <p class="company__descr-title">
+                        <span class="company__title-descr">УК «Острог»</span>
+                        — управляющая компания, работающая в Иркутске с 2014 года
+                    </p>
+                    <ul class="list-reset company__descr-content flex">
+                        <li class="company__descr-items">
+                            Приложение &laquo;Мой дом онлайн&raquo;;
+                        </li>
+                        <li class="company__descr-items">
+                            Чат с&nbsp;УК в&nbsp;каждом доме;
+                        </li>
+                        <li class="company__descr-items">
+                            Офисы в&nbsp;каждом районе;
+                        </li>
+                        <li class="company__descr-items">
+                            Удалённый контроль ИПУ и&nbsp;теплопунктов;
+                        </li>
+                        <li class="company__descr-items">
+                            Реализуем с&nbsp;собственниками функцию ведения 
+                            специального счета по&nbsp;формированию
+                            фонда капитального ремонта.
+                        </li>
+                    </ul>
+                    <div class="company__false-btn flex  animate">
+                        <p class="false-btn1 false-btn">профессианализм</p>
+                        <p class="false-btn2 false-btn">опыт</p>
+                        <p class="false-btn3 false-btn">надежность</p>
+                        <p class="false-btn4 false-btn">комплексный подход</p>
+                        <p class="false-btn5 false-btn">результат</p>
+                        <p class="false-btn6 false-btn">сервис</p>
+                    </div>
+                    <div class="company__plashka flex  animate">
+                        <div class="company__item plashka1 flex">
+                            <img src="Img/icon-home.svg" alt="home" class="plashka1-img">
+                            <div class="plashka1_block">
+                                <p class="plashka-title">117+</p>
+                            <p class="plashka-descr">многоквартирных домов в управлении</p>
+                            </div>
+                        </div>
+                        <div class="company__item plashka2 flex">
+                            <img src="Img/done-icon.svg" alt="done" class="plashka2-img">
+                            <div class="plashka2_block ">
+                                <p class="plashka-title">12 лет</p>
+                                <p class="plashka-descr">успешного опыта управления</p>
+                            </div>
+                        </div>
+                        <div class="company__item plashka3 flex">
+                            <img src="Img/acident-icon.svg" alt="acident" class="plashka3-img">
+                            <div class="plashka3_block ">
+                                <p class="plashka-title">24/7</p>
+                                <p class="plashka-descr">аварийное обслуживание</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__objects " id="objects">
+            <div class=" objects__all ">
+                <div class="container object__all-title">
+                    <h2 class="object__title animate">Объекты</h2>
+                    <p class="object__descr animate">
+                        Управляем домами в&nbsp;каждом районе Иркутска.
+                    </p>
+                </div>
+                <div class="swiper my-slider animate">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Эволюция"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='Пер. Академика Алексея Окладникова и ул. Летописца Нита Романова'
+                            data-area='130 000кв/м'
+                            data-floors='9-17'
+                            data-flats='1665'
+                            data-img1='Img/plashka-Evol1.png'
+                            data-img2='Img/plashka-Evol2.png'
+                            data-img3='Img/plashka-Evol3.png'>
+                           
+                            <img src="Img/Evolution.png" alt="Эволюция" class="object__items">
+                            <span class="object__name">ЖК "Эволюция"</span>
+                        </div>
+
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Алмазный"'
+                            data-address='Иркутская область, г. Иркутск, Первомайский район'
+                            data-street='улица Алмазная / улица Бажова.'
+                            data-area='41 832кв/м'
+                            data-floors='3-9'
+                            data-flats='720'
+                            data-img1='Img/Almaz-1.png'
+                            data-img2='Img/Almaz-2.png'
+                            data-img3='Img/Almaz-3.png'>
+                            <img src="Img/Almaz.png" alt="Алмазный" class="object__items">
+                            <span class="object__name">ЖК "Алмазный"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                        data-title='ЖК "Семья"'
+                            data-address='Иркутская область, г. Иркутск, Октябрьский район'
+                            data-street='улица Пискунова.'
+                            data-area='58 768кв/м'
+                            data-floors='17'
+                            data-flats='874'
+                            data-img1='Img/Family-1.png'
+                            data-img2='Img/Family-2.png'
+                            data-img3='Img/Family-3.png'>
+                            <img src="Img/family.png" alt="Семья" class="object__items">
+                            <span class="object__name">ЖК "Семья"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                         data-title='ЖК "Сосновый бор"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='улица Норильская.'
+                            data-area='5 987кв/м'
+                            data-floors='12'
+                            data-flats='208'
+                            data-img1='Img/Sosn-1.png'
+                            data-img2='Img/Sosn-2.png'
+                            data-img3='Img/Sosn-3.png'>
+                            <img src="Img/Sosn.png" alt="Сосновый бор" class="object__items">
+                            <span class="object__name">ЖК "Сосновый бор"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Возрождение"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='переулок имени Академика Алексея Окладникова, дом 14.'
+                            data-area='11 661кв/м'
+                            data-floors='19'
+                            data-flats='150'
+                            data-img1='Img/Vozr-1.png'
+                            data-img2='Img/Vozr-2.png'
+                            data-img3='Img/Vozr-3.png'>
+                            <img src="Img/Vozr.png" alt="Возрождение" class="object__items">
+                            <span class="object__name">ЖК "Возрождение"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Дуэт"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='ул. Ярославского, дом 382, дом 384.'
+                            data-area='19 989кв/м'
+                            data-floors='17'
+                            data-flats='340'
+                            data-img1='Img/Duo-1.png'
+                            data-img2='Img/Duo-2.png'
+                            data-img3='Img/Duo-3.png'>
+                            <img src="Img/Duo.png" alt="Дуэт" class="object__items">
+                            <span class="object__name">ЖК "Дуэт"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Патриот"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='улица Баумана, дом 237.'
+                            data-area='12 538кв/м'
+                            data-floors='9'
+                            data-flats='214'
+                            data-img1='Img/Patr-1.png'
+                            data-img2='Img/Patr-2.png'
+                            data-img3='Img/Patr-3.png'>
+                            <img src="Img/Patriot.png" alt="Патриот" class="object__items">
+                            <span class="object__name">ЖК "Патриот"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='мкр. "Берёзовый"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='микрорайон Берёзовый.'
+                            data-area='82 175кв/м'
+                            data-floors='3'
+                            data-flats='174'
+                            data-img1='Img/Berez-1.png'
+                            data-img2='Img/Berez-2.png'
+                            data-img3='Img/Berez-3.png'>
+                            <img src="Img/Berez.png" alt="Березовый мкр" class="object__items">
+                            <span class="object__name">мкр."Березовый"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "На Баумана"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='улица Баумана.'
+                            data-area='98 397кв/м'
+                            data-floors='17'
+                            data-flats='856'
+                            data-img1='Img/Baum-1.png'
+                            data-img2='Img/Baum-2.png'
+                            data-img3='Img/Baum-3.png'>
+                            <img src="Img/Baumana.png" alt="На Баумана" class="object__items">
+                            <span class="object__name">ЖК "На Баумана"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Предместье"'
+                            data-address='Иркутская область, г. Иркутск, Куйбышевский район'
+                            data-street='улица Баррикад.'
+                            data-area='53 032кв/м'
+                            data-floors='17'
+                            data-flats='837'
+                            data-img1='Img/Pred-1.png'
+                            data-img2='Img/Pred-2.png'
+                            data-img3='Img/Pred-3.png'>
+                            <img src="Img/Predm (1).png" alt="Предместье" class="object__items">
+                            <span class="object__name">ЖК "Предместье"</span>
+                        </div>
+                    </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                </div>
+                <!-- ===== СЕТКА (мобильные) ===== -->
+                <div class="objects__grid">
+                    <div class="swiper-slide object__item"
+                            data-title='ЖК "Эволюция"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='Пер. Академика Алексея Окладникова и ул. Летописца Нита Романова'
+                            data-area='130 000кв/м'
+                            data-floors='9-17'
+                            data-flats='1665'
+                            data-img1='Img/plashka-Evol1.png'
+                            data-img2='Img/plashka-Evol2.png'
+                            data-img3='Img/plashka-Evol3.png'
+                            
+                            data-img1-mobile='Img/Evolution-mobile868-1.png'
+                            data-img2-mobile='Img/Evolution-mobile868-2.png'
+                            data-img3-mobile='Img/Evolution-mobile868-3.png'
+                            
+                            data-img1-phone='Img/Evolution-mobile420-1.png'
+                            data-img2-phone='Img/Evolution-mobile420-2.png'
+                            data-img3-phone='Img/Evolution-mobile420-3.png'>
+                            <img src="Img/Evolution.png" alt="Эволюция" class="object__items">
+                            <span class="object__name">ЖК "Эволюция"</span>
+                        </div>
+
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Алмазный"'
+                            data-address='Иркутская область, г. Иркутск, Первомайский район'
+                            data-street='улица Алмазная / улица Бажова.'
+                            data-area='41 832кв/м'
+                            data-floors='3-9'
+                            data-flats='720'
+                            data-img1='Img/Almaz-1.png'
+                            data-img2='Img/Almaz-2.png'
+                            data-img3='Img/Almaz-3.png'
+                            
+                            data-img1-mobile='Img/Almaz-868-1.png'
+                            data-img2-mobile='Img/Almaz-868-2.png'
+                            data-img3-mobile='Img/Almaz-868-3.png'
+                            
+                            data-img1-phone='Img/Almaz-mobile-1.png'
+                            data-img2-phone='Img/Almaz-mobile-2.png'
+                            data-img3-phone='Img/Almaz-mobile-3.png'>
+
+                            <img src="Img/Almaz.png" alt="Алмазный" class="object__items">
+                            <span class="object__name">ЖК "Алмазный"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                        data-title='ЖК "Семья"'
+                            data-address='Иркутская область, г. Иркутск, Октябрьский район'
+                            data-street='улица Пискунова.'
+                            data-area='58 768кв/м'
+                            data-floors='17'
+                            data-flats='874'
+                            data-img1='Img/Family-1.png'
+                            data-img2='Img/Family-2.png'
+                            data-img3='Img/Family-3.png'
+                            data-img1-mobile='Img/Family-868-1.png'
+                            data-img2-mobile='Img/Family-868-2.png'
+                            data-img3-mobile='Img/Family-868-3.png'
+                            
+                            data-img1-phone='Img/Family-phone-1.png'
+                            data-img2-phone='Img/Family-phone-2.png'
+                            data-img3-phone='Img/Family-phone-3.png'>
+                            <img src="Img/family.png" alt="Семья" class="object__items">
+                            <span class="object__name">ЖК "Семья"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                         data-title='ЖК "Сосновый бор"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='улица Норильская.'
+                            data-area='5 987кв/м'
+                            data-floors='12'
+                            data-flats='208'
+                            data-img1='Img/Sosn-1.png'
+                            data-img2='Img/Sosn-2.png'
+                            data-img3='Img/Sosn-3.png'
+                            data-img1-mobile='Img/Sosn-868-1.png'
+                            data-img2-mobile='Img/Sosn-868-2.png'
+                            data-img3-mobile='Img/Sosn-868-3.png'
+                            
+                            data-img1-phone='Img/Sosn-phone-1.png'
+                            data-img2-phone='Img/Sosn-phone-2.png'
+                            data-img3-phone='Img/Sosn-phone-3.png'>
+                            <img src="Img/Sosn.png" alt="Сосновый бор" class="object__items">
+                            <span class="object__name">ЖК "Сосновый бор"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Возрождение"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='переулок имени Академика Алексея Окладникова, дом 14.'
+                            data-area='11 661кв/м'
+                            data-floors='19'
+                            data-flats='150'
+                            data-img1='Img/Vozr-1.png'
+                            data-img2='Img/Vozr-2.png'
+                            data-img3='Img/Vozr-3.png'
+                            data-img1-mobile='Img/Vozr-868-1.png'
+                            data-img2-mobile='Img/Vozr-868-2.png'
+                            data-img3-mobile='Img/Vozr-868-3.png'
+                            
+                            data-img1-phone='Img/Vozr-phone-1.png'
+                            data-img2-phone='Img/Vozr-phone-2.png'
+                            data-img3-phone='Img/Vozr-phone-3.png'>
+                            <img src="Img/Vozr.png" alt="Возрождение" class="object__items">
+                            <span class="object__name">ЖК "Возрождение"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Дуэт"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='ул. Ярославского, дом 382, дом 384.'
+                            data-area='19 989кв/м'
+                            data-floors='17'
+                            data-flats='340'
+                            data-img1='Img/Duo-1.png'
+                            data-img2='Img/Duo-2.png'
+                            data-img3='Img/Duo-3.png'
+                            data-img1-mobile='Img/Duo-868-1.png'
+                            data-img2-mobile='Img/Duo-868-2.png'
+                            data-img3-mobile='Img/Duo-868-3.png'
+                            
+                            data-img1-phone='Img/Duo-pnone-1.png'
+                            data-img2-phone='Img/Duo-pnone-2.png'
+                            data-img3-phone='Img/Duo-pnone-3.png'>
+                            <img src="Img/Duo.png" alt="Дуэт" class="object__items">
+                            <span class="object__name">ЖК "Дуэт"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Патриот"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='улица Баумана, дом 237.'
+                            data-area='12 538кв/м'
+                            data-floors='9'
+                            data-flats='214'
+                            data-img1='Img/Patr-1.png'
+                            data-img2='Img/Patr-2.png'
+                            data-img3='Img/Patr-3.png'
+                            data-img1-mobile='Img/Patr-868-1.png'
+                            data-img2-mobile='Img/Patr-868-2.png'
+                            data-img3-mobile='Img/Patr-868-3.png'
+                            
+                            data-img1-phone='Img/Patr-phone-1.png'
+                            data-img2-phone='Img/Patr-phone-2.png'
+                            data-img3-phone='Img/Patr-phone-3.png'>
+                            <img src="Img/Patriot.png" alt="Патриот" class="object__items">
+                            <span class="object__name">ЖК "Патриот"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='мкр. "Берёзовый"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='микрорайон Берёзовый.'
+                            data-area='82 175кв/м'
+                            data-floors='3'
+                            data-flats='174'
+                            data-img1='Img/Berez-1.png'
+                            data-img2='Img/Berez-2.png'
+                            data-img3='Img/Berez-3.png'
+                            data-img1-mobile='Img/Berez-868-1.png'
+                            data-img2-mobile='Img/Berez-868-2.png'
+                            data-img3-mobile='Img/Berez-868-3.png'
+                            
+                            data-img1-phone='Img/Berez-phone-1.png'
+                            data-img2-phone='Img/Berez-phone-2.png'
+                            data-img3-phone='Img/Berez-phone-3.png'>
+                            <img src="Img/Berez.png" alt="Березовый мкр" class="object__items">
+                            <span class="object__name">мкр."Березовый"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "На Баумана"'
+                            data-address='Иркутская область, г. Иркутск, Ленинский район'
+                            data-street='улица Баумана.'
+                            data-area='98 397кв/м'
+                            data-floors='17'
+                            data-flats='856'
+                            data-img1='Img/Baum-1.png'
+                            data-img2='Img/Baum-2.png'
+                            data-img3='Img/Baum-3.png'
+                            data-img1-mobile='Img/Baum-868-1.png'
+                            data-img2-mobile='Img/Baum-868-2.png'
+                            data-img3-mobile='Img/Baum-868-3.png'
+                            
+                            data-img1-phone='Img/Baum-phone-1.png'
+                            data-img2-phone='Img/Baum-phone-2.png'
+                            data-img3-phone='Img/Baum-phone-3.png'>
+                            <img src="Img/Baumana.png" alt="На Баумана" class="object__items">
+                            <span class="object__name">ЖК "На Баумана"</span>
+                        </div>
+                        <div class="swiper-slide object__item"
+                            data-title='ЖК "Предместье"'
+                            data-address='Иркутская область, г. Иркутск, Куйбышевский район'
+                            data-street='улица Баррикад.'
+                            data-area='53 032кв/м'
+                            data-floors='17'
+                            data-flats='837'
+                            data-img1='Img/Pred-1.png'
+                            data-img2='Img/Pred-2.png'
+                            data-img3='Img/Pred-3.png'
+
+                            data-img1-mobile='Img/Predm-868-1.png'
+                            data-img2-mobile='Img/Predm-868-2.png'
+                            data-img3-mobile='Img/Predm-868-3.png'
+                            
+                            data-img1-phone='Img/Predm-mobile-1.png'
+                            data-img2-phone='Img/Predm-mobile-2.png'
+                            data-img3-phone='Img/Predm-mobile-3.png'>
+
+                            <img src="Img/Predm (1).png" alt="Предместье" class="object__items">
+                            <span class="object__name">ЖК "Предместье"</span>
+                        </div>
+
+                   </div>
+
+                
+            </div>
+        </section>
+         <!-- Описание ЖК по нажатию -->
+                         <div class="objects__inform" id="objectModal">
+                           
+                            <div class="objects__plashka flex">
+                                 <button class="btn objects_plashka-close" id="plashkaCloseObjects">
+                                    <img src="Img/close.svg" alt="close">
+                                </button>
+                                <div class="objects__plashka-img flex">
+                                    
+                                        <img src="Img/plashka-Evol1.png" alt="Эволюция" class="plashka__img" id="modalImg1">
+                                        <img src="Img/plashka-Evol2.png" alt="Эволюция" class="plashka__img" id="modalImg2">
+                                        <img src="Img/plashka-Evol3.png" alt="Эволюция" class="plashka__img" id="modalImg3">
+                                </div>
+                                <div class="objects__plashka-content flex">
+                                    <div class="plashka__all-content flex">
+                                    <h2 class="objects__plashka-title" id="modalTitle"></h2>
+                                    <p class="objects__plashka-descr">
+                                        Адрес:<br>
+                                        <span id="modalAddress"></span>
+                                    </p>
+                                    <p class="objects__plashka-descr" id="modalStreet">
+                                        
+                                    </p>
+                                    </div>
+                                    <div class="plashka__inform-digit flex">
+                                        <div class="objects__digit-inform plashka-obj">
+                                            <p class="plashka-obj__number" id="modalArea"></p>
+                                            <p class="plashka-obj__descr">Общая площадь</p>
+                                        </div>
+                                        <div class="objects__digit-inform plashka-obj">
+                                            <p class="plashka-obj__number" id="modalFloors"></p>
+                                            <p class="plashka-obj__descr">Этажность</p>
+                                        </div>
+                                        <div class="objects__digit-inform plashka-obj">
+                                            <p class="plashka-obj__number" id="modalFlats"></p>
+                                            <p class="plashka-obj__descr">Квартир</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                         </div>
+        <section class="privilege__section" id="privilege">
+            <div class="container privilege__block">
+                
+                <div class="privilege__descr-block flex"> 
+                    
+                    <div class="privilege__content flex">
+                        <h2 class="privilege__title  animate"> Преимущества </h2>
+                        <div class="privilege__descr-1  animate">
+                            <p class="privilege__name  ">
+                                Маркетплейс услуг
+                            </p>
+                            <p class="privilege__inform ">
+                                Проверенные мастера и&nbsp;сервисы для дома.
+                               <br> Без поиска, без риска.
+                            </p>
+                        </div>
+                        <div class="privilege__descr-2  animate">
+                            <div class="privilege__stars-block flex">
+                                <span class="privilege__name">
+                                    4,5 из 5
+                                </span>
+                            <img src="Img/star.png" alt="звезды" class="privilege__star">
+                            </div>
+                            <p class="privilege__inform">
+                                Так жильцы оценивают нашу работу
+                            </p>
+                        </div>
+                        <div class="privilege__descr-3  animate">
+                            <p class="privilege__name">
+                               Ни&nbsp;один дом не&nbsp;сменил&nbsp;УК за&nbsp;всё время работы.
+                            </p>
+                            <p class="privilege__inform">
+                                Дома остаются с&nbsp;нами&nbsp;&mdash; 
+                                потому что жильцы нам доверяют.
+                            </p>
+                        </div>
+                        <button class="privilege__btn "> лицензия</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <div class="privilege__plashka">
+                    <div class="privilege__plashka-block">
+                        <button class="btn privilege__close" id="privilegePlashkaClose">
+                            <img src="Img/close.svg" alt="close">
+                        </button>
+                        <img src="Img/licence.png" alt="Лицензия" class="privilege__licence">
+                    </div>        
+                </div>
+        <section class="documents__section" id="documents">
+            <div class="container documents flex">
+                <div class="documents__content flex">
+                    <h2 class="documents__title  animate">Документы новосёла </h2>
+                    <p class="documents__descr  animate">
+                        подскажем каждый шаг
+                    </p>
+                </div>
+                <div class="documents__download flex  animate">
+                    <ul class="list-reset documents__list flex">
+                         <li class="documents__items">
+                            <a href="https://drive.google.com/file/d/1VbSODzDuMuD3zvkmZrQs5UP0e3Md3n6x/view" target="_blank" class="documents__link">
+                                <p class="documents__name">
+                                   Важная <br>информация!!!
+                                </p>
+                                <img src="Img/document.png" alt="Документ" class="documents__img">
+                            </a>
+                        </li>
+                        <li class="documents__items">
+                            <a href="https://drive.google.com/file/d/1gYjnGAV9XWVtFHCwP0wcSeOffaM-7QIb/view" target="_blank" class="documents__link">
+                                <p class="documents__name">
+                                    Договор<br>управления
+                                </p>
+                                <img src="Img/document.png" alt="Документ" class="documents__img">
+                            </a>
+                        </li>
+                        <li class="documents__items">
+                            <a href="https://drive.google.com/file/d/1-qSDw3UbYwitxbmH8z-2CanqRprklY1C/view" target="_blank" class="documents__link">
+                                <p class="documents__name">
+                                    Тарифные планы&nbsp;на&nbsp;ЖУ
+                                </p>
+                                <img src="Img/document.png" alt="Документ" class="documents__img">
+                            </a>
+                        </li>
+                        <li class="documents__items">
+                            <a href="https://drive.google.com/file/d/1NqguiXYDJCyCkgPaw-vKxyrMabuqJGKW/view" class="documents__link" target="_blank">
+                                <p class="documents__name">
+                                   Памятка<br> новосела
+                                </p>
+                                <img src="Img/document.png" alt="Документ" class="documents__img">
+                            </a>
+                        </li>
+                        <li class="documents__items">
+                            <a href="https://drive.google.com/file/d/1NqguiXYDJCyCkgPaw-vKxyrMabuqJGKW/view" target="_blank" class="documents__link">
+                                <p class="documents__name">
+                                   Правила <br>проживания 
+                                </p>
+                                <img src="Img/document.png" alt="Документ" class="documents__img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <section class="contacts__section" id="contacts">
+            <div class="container contacts ">
+                <div class="contacts__block flex">
+                        <div class="contacts__all-information flex">
+                            <h2 class="contacts__title animate">Контакты</h2>
+                            <p class="contacts__tell animate">тел: 8 (3952) 666-428</p>
+                            <div class="contacts__adress">
+                                <p class="contacts__adress-title animate">Адреса офисов</p>
+                                <ul class="contacts__list list-reset flex">
+                                    <li class="contacts__items animate">
+                                        г. Иркутск, ул. Алмазная, 13    
+                                    </li>
+                                    <li class="contacts__items animate">
+                                        г. Иркутск, переулок 
+                                        им. Академика&nbsp;Алексея Окладникова, 3
+                                    </li>
+                                    <li class="contacts__items animate">
+                                        г. Иркутск, ул. Баррикад, 62/10
+                                    </li>
+                                    <li class="contacts__items animate">
+                                        г. Иркутск, мкр Березовый,  114
+                                    </li>
+                                    <li class="contacts__items animate">
+                                        г. Иркутск, ул. Пискунова, 138
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="https://max.ru/id3812150608_biz" class="contacts__max animate" target="_blank">
+                                мессенджер MAX
+                            </a>
+                        </div>
+                </div>
+            </div>
+            <div class="contacts__work flex animate">
+                    <h2 class="contacts__work-title">Режим работы</h2>
+                    <p class="contacts__work-time">ПН-ПТ:08.00 – 17.00</p>
+                    <p class="contacts__work-time">СБ,ВСК - выходные дни</p>
+            </div>
+        </section>
+        <section class="messenger ">
+            <div class="container messenger__block flex ">
+                <h2 class="messenger__title animate">Мы всегда на связи</h2>
+                <p class="messenger__descr animate">
+                    Связаться с&nbsp;нами можно так, как удобно вам.<br>
+                    Выбирайте свой способ&nbsp;&mdash; мы&nbsp;ответим.
+                </p>
+                <ul class="messenger__qr-codes list-reset flex animate">
+                    <li class="messenger__items flex">
+                       <img src="Img/qr-mdo-big.png" alt="куар" class="messenger__img"> 
+                       <p class="messenger__descr-app">
+                        приложение <br>
+                        <span class="messeger__color">«Мой дом онлайн»</span> <br>
+                        (Android)
+                        </p>         
+                    </li>
+                    <li class="messenger__items flex">
+                        <img src="Img/qr-max.png" alt="куар" class="messenger__img"> 
+                        <p class="messenger__descr-app">
+                        мессенджер <span class="messeger__color">MAX</span>
+                        </p>   
+                    </li>
+                    <li class="messenger__items flex">
+                        <img src="Img/qr-ios-big.png" alt="куар" class="messenger__img">
+                        <p class="messenger__descr-app">
+                        приложение <br>
+                        <span class="messeger__color">«Мой дом онлайн»</span> <br>
+                        (iOS)
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__content flex">
+                <a href="/" class="header__link-logo">
+                <img src="Img/logoHeader.png" alt="logo" class="header__logo">
+                </a>
+                <div class="footer__content-block">
+                    <p class="footer__content-inform">
+                        Информация, опубликованная на&nbsp;сайте, 
+                        не&nbsp;является публичной офертой, определяемой 
+                        положениями Гражданского кодекса Российской Федерации 
+                        и&nbsp;может быть изменена по&nbsp;усмотрению компании
+                    </p>
+                    <a href="https://vk.ru/doc60913186_714275183?hash=umQ46V690fA4XOPxfnGBsBeZNiiNmQMC2NwqkrXuRTk&dl=wjE0f3wX8uzghyzJ8rN8QEMGbq4hfOyOoP6cCGfS4WX&from_module=vkmsg_desktop" class="footer__content-descr" target="_blank">
+                        ПОЛОЖЕНИЕ О ПЕРСОНАЛЬНЫХ ДАННЫХ
+                    </a>
+                <div class="footer__btn flex">
+                    <div class="footer__email flex">
+                    <img src="Img/mail.svg" alt="icon_maill">
+                    <a class="btn footer__btn1" href="mailto:ukostrog.irk@gmail.com">ukostrog.irk@gmail.com</a>
+                    </div>
+                    <div class="footer__phone flex">
+                    <img src="Img/phone.svg" alt="icon_phone">
+                    <a class="btn footer__btn1" href="tel:8 (3952) 666-428">8 (3952) 666-428</a>
+                    </div>
+                </div>
+                <div class="footer__important-inform">
+                    <p class="footer__import-inf">
+                        Полное наименование: Общество с ограниченной ответственностью "Управляющая компания "Острог"
+                        Сокращенное наименование: ООО "УК "Острог"<br>
+                        ИНН / КПП:3812150608 / 381201001ОГРН:1133850035208 <br>
+                    </p>
+                    <p class="footer__import-inf">
+                        БИК 042520607 <br> Р/с №40702810718350002605 в Байкальском банке ПАО Сбербанк,<br> Кор/счет 30101810900000000607
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Плашка Cookie (слева внизу) -->
+<div class="cookie-plashka" id="cookiePlashka">
+    <p class="cookie-plashka__text">
+        Мы используем cookies для работы сайта и аналитики. 
+        <a href="https://vk.ru/doc60913186_714275183?hash=umQ46V690fA4XOPxfnGBsBeZNiiNmQMC2NwqkrXuRTk&dl=wjE0f3wX8uzghyzJ8rN8QEMGbq4hfOyOoP6cCGfS4WX&from_module=vkmsg_desktop" class="cookie-plashka__link" target="_blank">Подробнее</a>.
+    </p>
+    <button class="cookie-plashka__btn" id="cookieAccept">Принять</button>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="js.js" defer></script>
+    
+</body>
+</html>
